@@ -1,0 +1,299 @@
+/* ALL */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#CV {
+  width: 50%;
+  display: flex;
+}
+@media screen and (max-width: 1280px) {
+  #CV {
+    width: 100%;
+  }
+}
+@media screen and (orientation: landscape), (max-width: 1024px) {
+  #CV {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  #CV {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 1281px) {
+  #CV {
+    width: 50%;
+  }
+}
+
+#Liseret {
+  background-color: #feca07;
+  width: 35%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 640px) {
+  #Liseret {
+    width: 100%;
+  }
+}
+#Liseret #face_pic {
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #daaf12;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto 35px auto;
+}
+#Liseret #contact ul {
+  color: #404040;
+  margin: 25px auto;
+  list-style-type: none;
+  width: 75%;
+}
+#Liseret #contact ul li {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#Liseret #about_me p {
+  width: 75%;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #404040;
+  text-align: justify;
+}
+#Liseret #hobbies_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#Liseret #hobbies_icons span {
+  margin: 20px 15px 20px 15px;
+}
+#Liseret #hobbies_icons .hobby_icon {
+  width: 64px;
+  height: 64px;
+  border: 4px solid #404040;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Liseret #hobbies_icons .fa-sim-card,
+#Liseret #hobbies_icons .fa-gamepad,
+#Liseret #hobbies_icons .fa-desktop {
+  color: #404040;
+}
+@media screen and (orientation: landscape), (max-width: 1024px) {
+  #Liseret #hobbies {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  #Liseret #hobbies {
+    position: inherit;
+  }
+}
+#Liseret #contact h3,
+#Liseret #about_me h3,
+#Liseret #hobbies h3 {
+  color: #feca07;
+  background-color: #404040;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 0;
+}
+
+#Contenu {
+  display: inline-block;
+  vertical-align: top;
+  width: 55%;
+}
+@media screen and (max-width: 640px) {
+  #Contenu {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+}
+#Contenu #personnal_infos {
+  padding-top: 70px;
+  margin-bottom: 120px;
+}
+#Contenu #personnal_infos h1 {
+  font-size: 48px;
+}
+#Contenu #personnal_infos #prenom {
+  font-weight: bold;
+  color: #daaf12;
+}
+#Contenu #personnal_infos #nom {
+  font-weight: 200;
+}
+#Contenu #personnal_infos #job {
+  color: #404040;
+  font-size: 24px;
+}
+#Contenu #personnal_infos #job_underline {
+  border-bottom: 2px solid #daaf12;
+}
+
+#formations h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #daaf12;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+#formations i {
+  margin-right: 20px;
+}
+#formations .fa-graduation-cap {
+  color: #daaf12;
+}
+#formations .fa-circle,
+#formations .fa-dot-circle {
+  color: #daaf12;
+}
+#formations .fa-circle {
+  font-size: 10px;
+}
+#formations .formation {
+  display: flex;
+  margin-top: 25px;
+}
+#formations .formation .left-block {
+  width: 30%;
+  margin: 0 20px;
+  color: #daaf12;
+}
+#formations .formation .left-block p {
+  color: #404040;
+  font-weight: bold;
+  font-size: 15px;
+}
+#formations .formation .right-block {
+  width: 60%;
+}
+#formations .formation .right-block p {
+  text-align: justify;
+  color: #404040;
+  font-size: 13px;
+  margin-top: 10px;
+}
+#formations .formation .right-block .formation_name {
+  color: #404040;
+  text-transform: uppercase;
+}
+#formations .formation .right-block .formation_title {
+  margin-top: 10px;
+  color: #404040;
+  font-size: 16px;
+}
+
+.experiences_pros {
+  margin-top: 50px;
+}
+.experiences_pros h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #daaf12;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.experiences_pros h3 i {
+  margin-right: 20px;
+}
+.experiences_pros .fa-briefcase {
+  color: #daaf12;
+}
+.experiences_pros .fa-circle,
+.experiences_pros .fa-dot-circle {
+  color: #daaf12;
+}
+.experiences_pros .fa-circle {
+  font-size: 10px;
+}
+.experiences_pros .experience_pro {
+  display: flex;
+  margin-top: 25px;
+}
+.experiences_pros .experience_pro .left-block {
+  width: 35%;
+  margin-left: 20px;
+  color: #daaf12;
+}
+.experiences_pros .experience_pro .left-block p {
+  color: #404040;
+  font-weight: bold;
+  font-size: 14px;
+}
+.experiences_pros .experience_pro .right-block {
+  width: 60%;
+}
+.experiences_pros .experience_pro .right-block p {
+  text-align: justify;
+  color: #404040;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.experiences_pros .experience_pro .experience_name {
+  color: #404040;
+  text-transform: uppercase;
+}
+.experiences_pros .experience_pro .experience_name {
+  color: #404040;
+  font-size: 16px;
+}
+.experiences_pros .experience_pro .experience_title {
+  margin-top: 10px;
+  color: #404040;
+  font-size: 16px;
+}
+
+#recommandations {
+  margin-top: 50px;
+}
+#recommandations h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid #daaf12;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+#recommandations h2 i {
+  margin-right: 20px;
+}
+#recommandations .fa-pencil-alt {
+  color: #daaf12;
+}
+#recommandations #recommandations_infos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+#recommandations #recommandations_infos div {
+  width: 50%;
+}
+#recommandations #recommandations_infos div span {
+  display: block;
+  color: #404040;
+  font-size: 16px;
+}
+#recommandations #recommandations_infos div span:nth-child(1) {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#recommandations #recommandations_infos div span::nth-child(2) {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
